@@ -25,7 +25,7 @@ app = Client("User-bot",
 # Function to send messages
 async def send_messages():
   for message in messages:
-    chat_id = os.getenv("CHANNEL_ID")
+    chat_id = -1002043039311
     await app.send_message(chat_id, message)
     await asyncio.sleep(1)  # Adjust this delay if needed
 
